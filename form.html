@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Form</title>
+</head>
+<body>
+    <!-- <marquee behavior="scroll" direction="left"><b>Application Form</b></marquee> -->
+    <h1><b>APPLICATION FORM</b></h1>
+    <form action="message.html" target="_blank">
+    <fieldset>
+        <legend><b>Personal Details</b></legend>
+        <br>
+        <label for="sal">Salutation</label>
+        <select name="sal" id="sal">
+            <option value="">--none--</option>
+            <option value="">Mr.</option>
+            <option value="">Mrs.</option>
+            <option value="">Dr</option>
+        </select>
+        <br><br>
+        <label for="fname" >First Name</label>
+        <input type="text"  id="fname"  name="First Name" placeholder="Please enter your first  name" required pattern="[A-Za-z]{3,7}">
+        <br><br>
+        <label for="mname">Middle Name</label>
+        <input type="text" id="mname" required name="Middle Name" placeholder="Please enter your middle name" pattern="[A-Za-z]{3,8}">
+        <br><br>
+        <label for="lname">Last Name </label>
+        <input type="text" id="lname" required name="Last Name" placeholder="Please enter your last name ">
+        <br><br>
+        <label for="num">Age</label>
+        <input type="number" id="num" name="Age" placeholder="18 - 65" >
+        <br><br>
+        <label for="dob">DOB</label>`
+        <input type="date" name="DOB" id="dob">
+        <br><br>
+        <label for="pnumber">Phone Number</label>
+         <input type="number" id="pnumber" name="phone" required placeholder="Enter your Phone number" pattern="[6-9]{1}[0-9]{9}">
+
+        <br><br>
+        <label for="email">Email</label> 
+        <input type="email" id="email" name="email" required placeholder="Enter your personal email">
+
+        <br>
+    </fieldset>
+<br><br>
+    <fieldset>
+        <legend><b>Educational Qualification</b></legend>
+        <br>
+        <label for="">Department</label>
+        <br>
+        <input type="radio" id="CS" name="dept">
+        <label for="CS">CS</label>
+        <input type="radio" id="EC" name="dept">
+        <label for="EC">EC</label>
+        <input type="radio" id="ME" name="dept">
+        <label for="ME">ME</label>
+        <input type="radio" id="CV" name="dept">
+        <label for="CV">CV</label>
+        <br><br>
+        <label for="yop">Year of Passing</label>
+        <br>
+        <input list="YOP" id="yop" name="Year">
+        <datalist id="YOP">
+            <option >2018</option>
+            <option >2019</option>
+            <option >2020</option>
+            <option >2021</option>
+            <option >2022</option>
+            <option >2023</option>
+        </datalist>
+        <br><br>
+
+        <label for="">Skills</label>
+        <br>
+        <input type="checkbox" id="java">
+        <label for="java" >JAVA</label>
+        <input type="checkbox" id="html">
+        <label for="html" >HTML</label>
+        <input type="checkbox" id="MySql">
+        <label for="MySql" >MYSQL</label>
+        <input type="checkbox" id="js">
+        <label for="js" >JAVASCRIPT</label>
+        <input type="checkbox" id="css">
+        <label for="css" >CSS</label>
+
+        
+        
+    </fieldset>
+    <br>
+    <input type="submit">
+</form>
+<br>
+
+
+<br>
+
+
+
+</body>
+</html>
